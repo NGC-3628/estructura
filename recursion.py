@@ -56,9 +56,9 @@ def hanoi_recursive(n):
         return (hanoi_recursive(n - 1)* 2) + 1
 
 def ejecutar_hanoi():
-    n = int(input("¿Cuántas piezas tendrá la torre? "))
+    n = int(input("¿Cuantas piezas tendra la torre? "))
     resultado = hanoi_recursive(n)
-    print(f"Los movimientos a lograr son {resultado} para completar.")
+    print(f"Los movimientos a lograr son {resultado} para completar esta torre.")
 
 
 
@@ -80,4 +80,27 @@ def ejecutarMultiplicacionSinOperand():
     print(f"El resultado de {a} x {b} es: {resultado}\n")
 
 
+
+
+
+def euclidesIterativo(n, m):
+    while n!= 0:
+        b = m % n
+        m = n
+        n = b
+    
+    return m
+
+def euclides(m, n):
+    if n == 0:
+        return m 
+    
+    return (n, m % n)
+
+def ejecutarEuclides():
+    n = int(input("Ingresa un numero que no sea 0"))
+    m = int(input("Escribe un numero que no sea 0"))
+
+    resultado = ejecutarEuclides(m,n)
+    print(resultado)
 
