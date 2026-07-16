@@ -1,5 +1,6 @@
 from colas import opcionesColas
 from recursion import opcionesRecursion
+from main2 import main2
 
 
 def main():
@@ -10,7 +11,8 @@ def main():
         "\n3. ARBOLES BINARIOS " \
         "\n4. LISTAS ENLAZADAS " \
         "\n5. ARREGLOS " \
-        "\n6. RECURSIVIDAD "
+        "\n6. RECURSIVIDAD "\
+        "\n7. PRACTICA INDIVIDUAL 2"
     )
 
 
@@ -26,6 +28,8 @@ def main():
         print("Arreglos (pendiente)")
     elif option == "6":
         opcionesRecursion()
+    elif option == "7":
+        main2()
     else:
         print("Opción no válida.")
 

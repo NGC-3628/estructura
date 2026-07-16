@@ -91,16 +91,15 @@ def euclidesIterativo(n, m):
     
     return m
 
-def euclides(m, n):
-    if n == 0:
-        return m 
-    
-    return (n, m % n)
+def euclidesRecursivo(a, b):
+    if b == 0:
+        return a
+    return euclides_recursivo(b, a % b)
+
 
 def ejecutarEuclides():
-    n = int(input("Ingresa un numero que no sea 0"))
-    m = int(input("Escribe un numero que no sea 0"))
+    a = int(input("Primer número: "))
+    b = int(input("Segundo número: "))
 
-    resultado = ejecutarEuclides(m,n)
-    print(resultado)
-
+    print("Iterativo:", euclidesIterativo(a, b))
+    print("Recursivo:", euclidesRecursivo(a, b))

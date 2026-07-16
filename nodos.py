@@ -25,8 +25,9 @@ there are 4 types of lists:
 
     
 
-
 """
+
+#class 
 
 class Nodo:   # Molde de vagon
     def __init__(self, valor):  
@@ -66,9 +67,9 @@ class LinkedList:   # El centro de control o la estacion que maneja el tren
         print(" -> ".join(elementos) + "-> None")       # finalmente, se imprimen los elementos de cada vagon con el vagon en si.
 
 lista = LinkedList()                                    # se llama a la clase.
-lista.addFinal(10)                                      # se van agregando valores llamando a la funcion que agrega (pero como agrega si los agrega en mostrar?)
-lista.addFinal(20)
-lista.addFinal(30)
+#ista.addFinal("EH")                                      # se van agregando valores llamando a la funcion que agrega (pero como agrega si los agrega en mostrar?)
+#lista.addFinal("Puto")
+#lista.addFinal("Putote")
 lista.mostrar()                                         # se llama a la funcion mostrar y los imprime.
 
 
