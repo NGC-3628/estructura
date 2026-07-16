@@ -1,5 +1,6 @@
 import os
 
+
 # ------ utilidades de pantalla ------------
 
 def limpiar():
@@ -8,7 +9,7 @@ def pausa():
     input("\nClick enter to continue...")
 
 def separador():
-    print("alv " * 20)
+    print("*" * 50)
 
 
 

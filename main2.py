@@ -12,17 +12,17 @@ def main2():
         "\n1. Factorial"\
         "\n2. Euclides"\
         "\n3. Fibonacci"\
-        "\n4. Creditos"
+        "\n4. Creditos\n\n"
     )
 
     if option == "1":
-        optFactorial
+        optFactorial()
     elif option == "2":
-        optEuclides
+        optEuclides()
     elif option == "3":
-        optFibonacci
+        optFibonacci()
     elif option == "4":
-        mostrarNombres
+        mostrarNombres()
     else:
         print("opcion no valida")
     

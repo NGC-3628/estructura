@@ -12,7 +12,7 @@ def main():
         "\n4. LISTAS ENLAZADAS " \
         "\n5. ARREGLOS " \
         "\n6. RECURSIVIDAD "\
-        "\n7. PRACTICA INDIVIDUAL 2"
+        "\n7. PRACTICA INDIVIDUAL 2\n\n"
     )
 
 
