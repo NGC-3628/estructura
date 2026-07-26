@@ -92,6 +92,16 @@ class DoublyLinkedList:   # El centro de control o la estación que maneja el tr
         self.head = None        # La estación coloca su propio letrero de "INICIO".
                                 # Al nacer, este letrero apunta a None porque no hay vagones amarrados todavía.
 
+        # se necesitan los siguientes:
+        """
+        insertar inicio 
+        insertar despues
+        insertar antes
+        isnertar final
+        eliminiar final
+        eliminae inicio
+        """
+
     def addFinal(self, valor):  
         new = NodoDoble(valor)   # Fabricamos el vagón doble en memoria y le metemos su "producto".
         
