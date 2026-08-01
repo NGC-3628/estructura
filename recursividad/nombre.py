@@ -21,7 +21,7 @@ def mostrarNombres():
     print("Materia: Estructira de Datos")
     print("Practica Personal: Recursividad")
     separador()
-    print("Author : Isaac Iturralde Puente.  |  Matricula: \"24170079\"")
+    print("Autor : Isaac Iturralde Puente.  |  Matricula: \"24170079\"")
     separador()
     pausa()
 

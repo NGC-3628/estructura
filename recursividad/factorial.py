@@ -72,13 +72,13 @@ def optFactorial():
     separador()
     print(f"RESULTADO ITERATIVO:")
     print(f"  - Resultado: {res_it}")
-    print(f"  - Veces que entró al ciclo: {ciclos_it}")
+    print(f"  - Veces que entro al ciclo: {ciclos_it}")
     print(f"  - Tiempo de ejecución: {tiempo_it:.4f} ms")
     
     separador()
     print(f"RESULTADO RECURSIVO:")
     print(f"  - Resultado: {res_rec}")
-    print(f"  - Llamadas a la función: {llamadas_rec}")
+    print(f"  - Llamadas a la funcion: {llamadas_rec}")
     print(f"  - Tiempo de ejecución: {tiempo_rec:.4f} ms")
     separador()
     

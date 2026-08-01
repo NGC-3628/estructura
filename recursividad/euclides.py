@@ -2,9 +2,7 @@ import time
 from recursividad.nombre import limpiar, pausa, separador
 
 
-
 def euclidesIterativo(a, b):
-    
     contadorCiclos = 0
     inicio = time.perf_counter()
 
@@ -20,13 +18,7 @@ def euclidesIterativo(a, b):
     return a, tiempo_ms, contadorCiclos
 
 
-
-
-
-
-
 def euclidesRecursivo(a, b):
-
     euclidesRecursivo.contador += 1
 
     if b == 0:
@@ -35,7 +27,6 @@ def euclidesRecursivo(a, b):
 
 
 def ejecutarEuclides(a, b):
-
     euclidesRecursivo.contador = 0  
     
     inicio = time.perf_counter()
@@ -48,27 +39,49 @@ def ejecutarEuclides(a, b):
     return resultado, totalLlamadas, tiempo_ms
 
 
-
-
-
-
-
-
 def optEuclides():
     limpiar()
-    print("--- comparacion entre iterativo y recursivo ---")
+    print("--- comparacion de teorema de euclides.  ---")
     
     try:
         a = int(input("Ingresa el primer numero entero positivo: "))
         b = int(input("Ingresa el segundo numero entero positivo: "))
         
         if a < 0 or b < 0:
-            print("\nError. Ambos numeros son negativos")
+            print("\nError: Debes ingresar numeros mayores o iguales a cero.")
             pausa()
             return
     except ValueError:
-        print("\nError 404 not found xd.")
+        print("\nError: Debes ingresar numeros enteros válidos.")
         pausa()
         return
+
+
+
+    # iterative
+    mcd_it, tiempo_it, ciclos_it = euclidesIterativo(a, b)
+
+
+
+
+    # recusrive
+    mcd_rec, llamadas_rec, tiempo_rec = ejecutarEuclides(a, b)
+
+
+
+
+    # results
+    separador()
+    print(f"\nResultados para MCD({a}, {b}):")
+    print(f"-> Maximo Común Divisor: {mcd_it}\n")
     
+    print("--- Version Iterativa ---")
+    print(f"Ciclos ejecutados: {ciclos_it}")
+    print(f"Tiempo de ejecucion: {tiempo_it:.6f} ms\n")
     
+    print("--- Version Recursiva ---")
+    print(f"Llamadas recursivas: {llamadas_rec}")
+    print(f"Tiempo de ejecucion: {tiempo_rec:.6f} ms")
+    separador()
+
+    pausa()
